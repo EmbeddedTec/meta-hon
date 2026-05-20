@@ -14,5 +14,5 @@ inherit core-image
 IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE:append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "", d)}"
 
-IMAGE_FEATURES:append = "ssh-server-openssh "
-IMAGE_INSTALL:append = "nano " 
+IMAGE_FEATURES:append = " ssh-server-openssh"
+IMAGE_INSTALL:append = " nano trace-cmd ip-setup"

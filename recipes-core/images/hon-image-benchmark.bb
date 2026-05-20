@@ -15,4 +15,4 @@ IMAGE_ROOTFS_SIZE ?= "8192"
 IMAGE_ROOTFS_EXTRA_SPACE:append = "${@bb.utils.contains("DISTRO_FEATURES", "systemd", " + 4096", "", d)}"
 
 IMAGE_FEATURES:append = " package-management ssh-server-openssh nfs-client"
-IMAGE_INSTALL:append = " nano trace-cmd stress-ng sysbench fio iperf3" 
+IMAGE_INSTALL:append = " nano trace-cmd stress-ng sysbench fio iperf3 ip-setup" 
