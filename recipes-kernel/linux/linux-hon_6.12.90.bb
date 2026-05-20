@@ -7,7 +7,7 @@ DEPENDS = "lzop-native"
 
 PROVIDES += "virtual/kernel"
 
-inherit kernel
+inherit kernel kernel-deploy-oftree
 
 KERNEL_GIT = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git"
 
